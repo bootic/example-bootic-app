@@ -1,1 +1,7 @@
-<h2>Bienvenido, usuario de <%= current_shop.name %></h2>
+<h2>Bienvenido, usuario de <%= current_shop.name %>! Tu email es <%= user_email %></h2>
+
+<h2>Mis productos</h2>
+
+<% current_shop.products.each do |product| %>
+  <h3><%= product.title %>: <%= product.regular_price %></h3>
+<% end %>

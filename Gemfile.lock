@@ -1,0 +1,64 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bootic_client (0.0.29)
+      faraday (~> 0.15)
+      faraday-http-cache (~> 2)
+      net-http-persistent (~> 3.0)
+      oauth2 (~> 1.4)
+      uri_template (~> 0.7)
+    connection_pool (2.2.3)
+    faraday (0.17.3)
+      multipart-post (>= 1.2, < 3)
+    faraday-http-cache (2.2.0)
+      faraday (>= 0.8)
+    hashie (4.1.0)
+    jwt (2.2.1)
+    multi_json (1.15.0)
+    multi_xml (0.6.0)
+    multipart-post (2.1.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    net-http-persistent (3.1.0)
+      connection_pool (~> 2.2)
+    nio4r (2.5.2)
+    oauth2 (1.4.4)
+      faraday (>= 0.8, < 2.0)
+      jwt (>= 1.0, < 3.0)
+      multi_json (~> 1.3)
+      multi_xml (~> 0.5)
+      rack (>= 1.2, < 3)
+    omniauth (1.9.1)
+      hashie (>= 3.4.6)
+      rack (>= 1.6.2, < 3)
+    omniauth-bootic (0.0.5)
+      omniauth (~> 1.9)
+      omniauth-oauth2 (~> 1.6)
+    omniauth-oauth2 (1.6.0)
+      oauth2 (~> 1.1)
+      omniauth (~> 1.9)
+    puma (4.3.5)
+      nio4r (~> 2.0)
+    rack (2.2.3)
+    rack-protection (2.0.8.1)
+      rack
+    ruby2_keywords (0.0.2)
+    sinatra (2.0.8.1)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.8.1)
+      tilt (~> 2.0)
+    tilt (2.0.10)
+    uri_template (0.7.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bootic_client
+  omniauth-bootic
+  puma
+  sinatra
+
+BUNDLED WITH
+   1.17.2
